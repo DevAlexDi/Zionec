@@ -59,6 +59,25 @@ body {
     }
 }
 
+#big_grey_triangle {
+    position: relative;
+    overflow: hidden;
+    height: 1000px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        top: -200px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 1020px 860px 1020px 0;
+        border-color: transparent #f6f7f7 transparent transparent;
+    }
+}
+
 #block_1c {
     position: relative;
     overflow: hidden;
