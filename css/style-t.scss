@@ -39,14 +39,13 @@ body {
 
 .but {
     width: 246px;
-    height: 40px;
     border-radius: 25px;
     font: 14px ClearSansBold;
     text-transform: uppercase;
     text-align: center;
     color: white;
     display: inline-block;
-    padding-top: 10px;
+    padding: 10px 0;
     transition: 0.3s;
     background: #1b5469; /* Old browsers */
     background: -moz-linear-gradient(-60deg, #1b5469 0%, #55c683 100%); /* FF3.6-15 */
