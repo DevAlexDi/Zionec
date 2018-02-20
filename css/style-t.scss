@@ -152,6 +152,9 @@ body {
             margin-right: 25%;
             margin-bottom: 15px;
         }
+        .more {
+            height: 40px;
+        }
 
         &.third_prod {
             .price {
@@ -162,6 +165,60 @@ body {
 
     .second_prods_zag {
         margin: 45px 0 85px;
+    }
+
+    .prod2_img {
+        padding-left: 65px;
+    }
+    .prod2 {
+        display: flex;
+        margin-bottom: 40px;
+
+        .circle {
+            width: 51px;
+            height: 51px;
+            background: rgba(51, 130, 115, 0.25);
+            border-radius: 50px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle_mid {
+                width: 31px;
+                height: 31px;
+                border-radius: 30px;
+                background: rgba(51, 130, 115, 0.35);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .circle_center {
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 12px;
+                    background: rgba(51, 130, 115, 1);
+                }
+            }
+        }
+
+        .text {
+            padding-left: 10px;
+            color: #a3a4a6;
+            line-height: 1.2;
+
+            h5 {
+                color: #3a3d3e;
+                font: 18px ClearSansBold;
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+
+            .more {
+                margin-top: 45px;
+                height: 40px;
+            }
+        }
     }
 }
 
