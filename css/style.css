@@ -1,8 +1,21 @@
-@font-face {
-  font-family: ClearSans;
-  src: url(../fonts/ClearSans-Regular.ttf); }
-@font-face {
-  font-family: ClearSansBold;
-  src: url(../fonts/ClearSans-Regular.ttf); }
+.sec-lvl-1 .menu-wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .sec-lvl-1 .menu-wrapp .side.left-side {
+    width: 400px; }
+  .sec-lvl-1 .menu-wrapp .side.right-side {
+    width: 400px; }
+  .sec-lvl-1 .menu-wrapp .side .mid-side .menu-list {
+    list-style: none;
+    margin: 0;
+    display: flex; }
+    .sec-lvl-1 .menu-wrapp .side .mid-side .menu-list .first-itm {
+      padding: 32px 25px; }
+      .sec-lvl-1 .menu-wrapp .side .mid-side .menu-list .first-itm a, .sec-lvl-1 .menu-wrapp .side .mid-side .menu-list .first-itm span {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        color: #000; }
 
 /*# sourceMappingURL=style.css.map */
