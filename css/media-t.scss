@@ -7,6 +7,10 @@
   #reviews .reviews_slider_dots ul {
     justify-content: center;
   }
+
+  #block_1c .wrap_1c .text {
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 991px) {
@@ -16,6 +20,20 @@
 }
 
 @media (max-width: 767px) {
+  #block_1c {
+    padding-top: 40px;
+  }
+  #block_1c .zag {
+    margin-bottom: 65px;
+  }
+  #block_1c .wrap_1c {
+    display: block;
+    margin-bottom: 20px;
+  }
+  #block_1c .wrap_1c .icon {
+    margin-bottom: 20px;
+  }
+
   #reviews {
     padding-top: 40px;
   }
