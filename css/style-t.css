@@ -35,35 +35,107 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5469', endColorstr='#55c683',GradientType=1 );
     /* IE6-9 fallback on horizontal gradient */ }
 
-#reviews .zag {
-  margin-bottom: 90px; }
-#reviews .reviews_slider {
-  margin: 0 130px; }
-  #reviews .reviews_slider .rev .rev_wrap {
-    margin-top: 65px; }
-#reviews .reviews_slider_dots {
-  overflow: hidden;
+#reviews {
   padding-top: 65px; }
-  #reviews .reviews_slider_dots ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex; }
-    #reviews .reviews_slider_dots ul li {
-      width: 10px;
-      height: 10px;
-      margin-right: 11px; }
-      #reviews .reviews_slider_dots ul li button {
-        background: #a0a0a0;
-        border: 1px solid white;
-        color: transparent;
+  #reviews .zag {
+    margin-bottom: 90px; }
+  #reviews .reviews_slider {
+    padding: 0 100px;
+    position: relative; }
+    #reviews .reviews_slider .rev {
+      outline: none;
+      padding: 0 27.5px; }
+      #reviews .reviews_slider .rev .rev_wrap {
+        margin-top: 65px;
+        display: flex; }
+        #reviews .reviews_slider .rev .rev_wrap .circle {
+          width: 51px;
+          height: 51px;
+          background: rgba(51, 130, 115, 0.25);
+          border-radius: 50px;
+          flex-shrink: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+          #reviews .reviews_slider .rev .rev_wrap .circle .circle_mid {
+            width: 31px;
+            height: 31px;
+            border-radius: 30px;
+            background: rgba(51, 130, 115, 0.35);
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            #reviews .reviews_slider .rev .rev_wrap .circle .circle_mid .circle_center {
+              width: 12px;
+              height: 12px;
+              border-radius: 12px;
+              background: #338273; }
+        #reviews .reviews_slider .rev .rev_wrap .text {
+          color: #a3a4a6;
+          font-size: 14px;
+          line-height: 1.2;
+          margin-left: 12px; }
+          #reviews .reviews_slider .rev .rev_wrap .text span {
+            color: #3a3d3e;
+            font-size: 12px; }
+          #reviews .reviews_slider .rev .rev_wrap .text h4 {
+            color: #3a3d3e;
+            font: 18px ClearSansBold;
+            margin-bottom: 25px;
+            margin-top: 5px; }
+    #reviews .reviews_slider .slick-arrow {
+      position: absolute;
+      top: 50%;
+      margin-top: -117.5px;
+      width: 45px;
+      height: 235px;
+      border: none;
+      outline: none;
+      transition: 0.3s;
+      background: #1b5469;
+      /* Old browsers */
+      background: -moz-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(-135deg, #21606c 0%, #50bb80 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */ }
+      #reviews .reviews_slider .slick-arrow:hover {
+        opacity: 0.8; }
+      #reviews .reviews_slider .slick-arrow.slick-prev {
+        left: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px; }
+      #reviews .reviews_slider .slick-arrow.slick-next {
+        right: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px; }
+  #reviews .reviews_slider_dots {
+    overflow: hidden;
+    padding-top: 65px; }
+    #reviews .reviews_slider_dots ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex; }
+      #reviews .reviews_slider_dots ul li {
         width: 10px;
         height: 10px;
-        border-radius: 10px;
-        outline: none; }
-      #reviews .reviews_slider_dots ul li.slick-active button {
-        background: #1b5469;
-        border-color: #1b5469; }
+        margin-right: 11px; }
+        #reviews .reviews_slider_dots ul li button {
+          background: #a0a0a0;
+          border: 1px solid white;
+          color: transparent;
+          width: 10px;
+          height: 10px;
+          border-radius: 10px;
+          outline: none;
+          transition: 0.3s; }
+        #reviews .reviews_slider_dots ul li.slick-active button {
+          background: #1b5469;
+          border-color: #1b5469; }
 
 #about {
   color: #a3a4a6;
