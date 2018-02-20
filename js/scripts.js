@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    
+    $('.main-slider').slick({
+        dots:true,
+        arrows:false
+    });
+    
+    
+    
+    
     $('.reviews_slider').slick({
         infinite: true,
         slidesToShow: 3,
