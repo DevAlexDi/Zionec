@@ -4,11 +4,48 @@
 }
 @font-face {
     font-family: ClearSansBold;
-    src: url(../fonts/ClearSans-Regular.ttf);
+    src: url(../fonts/ClearSans-Bold.ttf);
 }
 
 body {
     max-width: 1920px;
     margin: 0 auto;
     font-family: ClearSans;
+}
+
+#about {
+    color: #a3a4a6;
+    font-size: 14px;
+    padding: 65px 0 70px;
+
+    h2 {
+        color: #242729;
+        font: 26px ClearSansBold;
+        text-transform: uppercase;
+        position: relative;
+        line-height: 1.2;
+        padding-bottom: 17px;
+        margin-bottom: 65px;
+
+        &:after {
+            position: absolute;
+            display: block;
+            content: '';
+            width: 105px;
+            height: 8px;
+            left: 0;
+            bottom: 0;
+            background: #1b5469; /* Old browsers */
+            background: -moz-linear-gradient(-54deg, #1b5469 0%, #55c683 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(-54deg, #1b5469 0%, #55c683 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(126deg, #1b5469 0%, #55c683 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5469', endColorstr='#55c683',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        }
+    }
+
+    p {
+        text-align: center;
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
 }

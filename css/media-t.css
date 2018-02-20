@@ -1,3 +1,8 @@
+@media (max-width: 767px) {
+  #about {
+    padding: 40px 0; }
 
+  #about h2 {
+    margin-bottom: 35px; } }
 
 /*# sourceMappingURL=media-t.css.map */
