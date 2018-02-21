@@ -58,6 +58,29 @@ body {
   .but:hover {
     opacity: 0.8; }
 
+#chosen {
+  padding: 35px 0 110px; }
+  #chosen h2 {
+    color: #d9d9d9;
+    font: 26px ClearSansBold;
+    text-transform: uppercase;
+    margin-bottom: 35px; }
+  #chosen .logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 160px; }
+    #chosen .logos div {
+      padding: 0 23px; }
+      #chosen .logos div img {
+        max-width: 100%;
+        filter: grayscale(100%);
+        opacity: 0.2;
+        transition: 0.3s; }
+      #chosen .logos div.active img {
+        filter: grayscale(0%);
+        opacity: 1; }
+
 #big_grey_triangle {
   position: relative;
   overflow: hidden;

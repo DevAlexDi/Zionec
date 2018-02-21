@@ -33,6 +33,20 @@ $(document).ready(function () {
             }
         ]
     });
+
+    var count = $('#chosen .logos div').length;
+
+    setInterval(function() {
+        var active = $('#chosen .logos .active');
+        if (active.index() < count - 1) {
+            active.removeClass('active');
+            active.next().addClass('active');
+        }
+        else {
+            active.removeClass('active');
+            $('#chosen .logos div:first-child').addClass('active');
+        }
+    }, 1000);
   
     
     
