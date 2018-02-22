@@ -47,6 +47,13 @@ $(document).ready(function () {
             $('#chosen .logos div:first-child').addClass('active');
         }
     }, 1000);
+
+    $('.prod2_item').mouseover(function(e) {
+        $(this).find('.more a').fadeIn(400);
+    });
+    $('.prod2_item').mouseleave(function(e) {
+        $(this).find('.more a').fadeOut(400);
+    });
   
     
     
