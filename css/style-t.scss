@@ -57,6 +57,49 @@ body {
     &:hover {
         opacity: 0.8;
     }
+
+    &.but_with_icon {
+        width: 275px;
+        margin: 50px 0 70px;
+
+        span {
+            position: relative;
+            padding-left: 35px;
+
+            &:before {
+                content: '';
+                display: block;
+                left: 0;
+                top: 2px;
+                position: absolute;
+                background-image: url(../img/but_icons.png);
+                background-repeat: no-repeat;
+            }
+        }
+
+        &.download {
+            span:before {
+                width: 19px;
+                height: 15px;
+                background-position: 0 0;
+            }
+        }
+        &.quest {
+            span:before {
+                width: 19px;
+                height: 15px;
+                background-position: 0 -15px;
+            }
+        }
+        &.complex {
+            span:before {
+                width: 19px;
+                height: 19px;
+                top: 0;
+                background-position: 0 -30px;
+            }
+        }
+    }
 }
 
 .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp {
@@ -589,6 +632,47 @@ body {
         }
         &.adv3 {
             margin-left: auto;
+        }
+    }
+}
+
+#product_page {
+    padding: 60px 0 65px;
+    background: #f6f7f7;
+}
+
+#product_text {
+    padding-top: 60px;
+
+    .zag {
+        margin-bottom: 60px;
+    }
+
+    p, ul, ol {
+        color: #242729;
+        font-size: 14px;
+    }
+
+    .img_wrap {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        &:before {
+            content: '';
+            display: block;
+            padding-top: 55%;
+        }
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: center center no-repeat;
+            background-size: cover;
         }
     }
 }

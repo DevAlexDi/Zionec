@@ -196,6 +196,14 @@
   #big_grey_triangle:after {
     display: none;
   }
+
+  .but.but_with_icon {
+    margin-bottom: 0;
+
+    &.complex {
+      margin-bottom: 50px;
+    }
+  }
 }
 
 @media (max-width: 767px) {

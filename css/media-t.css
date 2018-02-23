@@ -155,7 +155,12 @@
     right: -300px; }
 
   #big_grey_triangle:after {
-    display: none; } }
+    display: none; }
+
+  .but.but_with_icon {
+    margin-bottom: 0; }
+    .but.but_with_icon.complex {
+      margin-bottom: 50px; } }
 @media (max-width: 767px) {
   .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel {
     padding-right: 10px;
