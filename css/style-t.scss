@@ -548,3 +548,47 @@ body {
     }
 
 }
+
+
+/* ВНУТРЕННЯЯ СТРАНИЦА */
+
+#advantages {
+    padding: 35px 0;
+
+    h2 {
+        text-align: center;
+        color: #d9d9d9;
+        font: 26px ClearSansBold;
+        margin-bottom: 30px;
+    }
+
+    .adv {
+        text-align: center;
+        max-width: 205px;
+
+        .grad_text {
+            font: 72px ClearSansBold;
+            line-height: 1.0;
+            background: linear-gradient(to right, #6c0109, #ec2b3e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+        }
+        .grad_text:-ms-input-placeholder, .grad_text:-ms-input-placeholder, :root .grad_text, :root .grad_text, :root .grad_text {
+            -webkit-text-fill-color: currentColor;
+            background: none; }
+
+        p {
+            color: black;
+            font: 18px ClearSansBold;
+            line-height: 1.0;
+        }
+
+        &.adv2 {
+            margin: auto;
+        }
+        &.adv3 {
+            margin-left: auto;
+        }
+    }
+}

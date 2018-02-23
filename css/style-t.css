@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: ClearSans;
   src: url(../fonts/ClearSans-Regular.ttf); }
@@ -425,5 +426,35 @@ body {
     text-align: center;
     line-height: 1.3;
     margin-bottom: 15px; }
+
+/* ВНУТРЕННЯЯ СТРАНИЦА */
+#advantages {
+  padding: 35px 0; }
+  #advantages h2 {
+    text-align: center;
+    color: #d9d9d9;
+    font: 26px ClearSansBold;
+    margin-bottom: 30px; }
+  #advantages .adv {
+    text-align: center;
+    max-width: 205px; }
+    #advantages .adv .grad_text {
+      font: 72px ClearSansBold;
+      line-height: 1.0;
+      background: linear-gradient(to right, #6c0109, #ec2b3e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block; }
+    #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text {
+      -webkit-text-fill-color: currentColor;
+      background: none; }
+    #advantages .adv p {
+      color: black;
+      font: 18px ClearSansBold;
+      line-height: 1.0; }
+    #advantages .adv.adv2 {
+      margin: auto; }
+    #advantages .adv.adv3 {
+      margin-left: auto; }
 
 /*# sourceMappingURL=style-t.css.map */
