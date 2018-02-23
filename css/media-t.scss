@@ -42,6 +42,12 @@
   #chosen .logos {
     margin: 0 50px;
   }
+
+  #product_page:before {
+    width: 150px;
+    height: 217px;
+    margin-top: -108.5px;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -76,6 +82,10 @@
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
     left: 360px;
     top: 50px;
+  }
+
+  #product_page:before {
+    display: none;
   }
 }
 
@@ -383,5 +393,25 @@
   }
   #advantages .adv.adv2 {
     margin: 20px auto!important;
+  }
+
+  #product_page {
+    padding: 35px 0;
+  }
+
+  #product_page .prod_flex {
+    margin-top: 0;
+  }
+
+  #product_page .more {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #product_text {
+    padding: 35px 0 0;
+  }
+  #product_text .zag {
+    margin-bottom: 20px;
   }
 }
