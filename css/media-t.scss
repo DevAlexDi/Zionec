@@ -1,3 +1,20 @@
+@media (max-width: 1920px) {
+  .sec-lvl-2 .treangle-red {
+    background-size: cover;
+    width: 180px;
+    height: 268px;
+  }
+  .sec-lvl-2 .treangle-red p {
+    font-size: 16px;
+    top: 165px;
+    left: 60px;
+    line-height: 16px;
+  }
+  .sec-lvl-2 .main-slider .slick-dots {
+    right: 80px;
+  }
+}
+
 @media (max-width: 1800px) {
   #big_grey_triangle .left_triangle {
     left: -100px;
@@ -14,6 +31,13 @@
 }
 
 @media (max-width: 1600px) {
+  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .note-image {
+    width: 685px;
+    top: 50px;
+  }
+  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
+    left: 465px;
+  }
 
   #chosen .logos {
     margin: 0 50px;
@@ -34,30 +58,17 @@
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
     left: 460px;
   }
+  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
+    top: 80px;
+    left: 410px;
+  }
 }
 
 @media (max-width: 1400px) {
-  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
-    left: 430px;
-  }
-  .sec-lvl-2 .treangle-red {
-    background-size: cover;
-    width: 180px;
-    height: 268px;
-  }
-  .sec-lvl-2 .treangle-red p {
-    font-size: 16px;
-    top: 165px;
-    left: 60px;
-    line-height: 16px;
-  }
-
   #big_grey_triangle:after {
     top: 420px;
   }
-}
 
-@media (max-width: 1300px) {
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .note-image {
     width: 550px;
     top: 55px;
@@ -66,6 +77,9 @@
     left: 360px;
     top: 50px;
   }
+}
+
+@media (max-width: 1300px) {
   .sec-lvl-2 .treangle-red {
     width: 150px;
     height: 224px;
@@ -77,6 +91,12 @@
   }
   .sec-lvl-1 .menu-wrapp .side.right-side {
     width: 580px;
+  }
+  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .note-image {
+    top: 90px;
+  }
+  .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
+    left: 310px;
   }
 }
 
@@ -97,6 +117,9 @@
   }
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
     left: 250px;
+  }
+  .sec-lvl-2 .main-slider .slick-dots {
+    right: 10px;
   }
 
   #reviews .reviews_slider_dots ul {

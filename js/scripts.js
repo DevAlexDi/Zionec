@@ -2,7 +2,17 @@ $(document).ready(function () {
     
     $('.main-slider').slick({
         dots:true,
-        arrows:false
+        arrows:true,
+        nextArrow: '<button type="button" class="slick-next"><img src="img/rev_slider_next.png" alt="Вперед"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/rev_slider_prev.png" alt="Назад"></button>',
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
     });
     
     
