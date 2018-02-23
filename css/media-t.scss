@@ -42,6 +42,12 @@
   #chosen .logos {
     margin: 0 50px;
   }
+
+  #product_page:before {
+    width: 150px;
+    height: 217px;
+    margin-top: -108.5px;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -76,6 +82,10 @@
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
     left: 360px;
     top: 50px;
+  }
+
+  #product_page:before {
+    display: none;
   }
 }
 
@@ -195,6 +205,14 @@
   }
   #big_grey_triangle:after {
     display: none;
+  }
+
+  .but.but_with_icon {
+    margin-bottom: 0;
+
+    &.complex {
+      margin-bottom: 50px;
+    }
   }
 }
 
@@ -368,5 +386,46 @@
   }
   #about .zag {
     margin-bottom: 35px;
+  }
+
+  #advantages .adv {
+    margin: 0 auto!important;
+  }
+  #advantages .adv.adv2 {
+    margin: 20px auto!important;
+  }
+
+  #product_page {
+    padding: 35px 0;
+  }
+
+  #product_page .prod_flex {
+    margin-top: 0;
+  }
+
+  #product_page .more {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  #product_text {
+    padding: 35px 0 0;
+  }
+  #product_text .zag {
+    margin-bottom: 20px;
+  }
+
+
+  .modal .modal-dialog {
+    margin: 15px 0;
+  }
+  .modal .modal-dialog .modal-body {
+    padding: 30px 20px;
+  }
+  .modal .modal-dialog .modal-body .span_close {
+    top: 10px;
+  }
+  .modal .modal-dialog .modal-body .input_wrap {
+    margin-top: 20px;
   }
 }

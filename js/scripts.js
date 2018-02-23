@@ -59,8 +59,6 @@ $(document).ready(function () {
     }, 1000);
 
 
-    
-
     var flag_open_lang = true;
     $('.sity-wrapp').click(function(e){
         e.stopPropagation();
@@ -74,6 +72,7 @@ $(document).ready(function () {
         }
 
     });
+
   
 
     
@@ -83,6 +82,7 @@ $(document).ready(function () {
         , showMaskOnHover: false
         , showMaskOnFocus: true
     });
+
     
     
     
