@@ -1,6 +1,6 @@
 
 .sec-lvl-1{
-    overflow: hidden;
+    /*overflow: hidden;*/
     .menu-wrapp{
         display: flex;
         justify-content: space-between;
@@ -43,7 +43,6 @@
                             display: none;
                             span{
                                 display: block;
-                                text-align: right;
                             }
                         }
                         &:after{

@@ -54,6 +54,20 @@ $(document).ready(function () {
     $('.prod2_item').mouseleave(function(e) {
         $(this).find('.more a').fadeOut(400);
     });
+
+    var flag_open_lang = true;
+    $('.sity-wrapp').click(function(e){
+        e.stopPropagation();
+        if(flag_open_lang){
+            $('.sity-list').fadeIn(300);
+            flag_open_lang = false;
+        }
+        else{
+            $('.sity-list').fadeOut(300);
+            flag_open_lang = true;
+        }
+
+    });
   
     
     

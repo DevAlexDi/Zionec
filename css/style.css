@@ -1,5 +1,5 @@
 .sec-lvl-1 {
-  overflow: hidden; }
+  /*overflow: hidden;*/ }
   .sec-lvl-1 .menu-wrapp {
     display: flex;
     justify-content: space-between;
@@ -41,8 +41,7 @@
           .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list {
             display: none; }
             .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list span {
-              display: block;
-              text-align: right; }
+              display: block; }
           .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp:after {
             content: "";
             display: block;

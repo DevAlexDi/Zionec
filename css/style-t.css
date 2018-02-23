@@ -58,6 +58,52 @@ body {
   .but:hover {
     opacity: 0.8; }
 
+.sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp {
+  cursor: pointer; }
+  .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list {
+    position: absolute;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 33px);
+    background: #fff;
+    z-index: 1; }
+    .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: rotate(45deg);
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%) rotate(45deg);
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.1); }
+    .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list a, .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list span {
+      display: block;
+      position: relative;
+      z-index: 10;
+      background: #fff;
+      color: #0d264e;
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 12px;
+      padding: 9px 15px;
+      border-bottom: 1px solid #dddddd;
+      transition: 0.3s; }
+      .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list a:hover, .sec-lvl-1 .menu-wrapp .side.right-side .flex-tel .sity-wrapp .sity-list span:hover {
+        background: -moz-linear-gradient(-54deg, #1b5469 0%, #55c683 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(-54deg, #1b5469 0%, #55c683 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(126deg, #1b5469 0%, #55c683 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b5469', endColorstr='#55c683',GradientType=1 );
+        /* IE6-9 fallback on horizontal gradient */
+        color: white; }
+
 #chosen {
   padding: 35px 0 110px; }
   #chosen h2 {
