@@ -414,4 +414,18 @@
   #product_text .zag {
     margin-bottom: 20px;
   }
+
+
+  .modal .modal-dialog {
+    margin: 15px 0;
+  }
+  .modal .modal-dialog .modal-body {
+    padding: 30px 20px;
+  }
+  .modal .modal-dialog .modal-body .span_close {
+    top: 10px;
+  }
+  .modal .modal-dialog .modal-body .input_wrap {
+    margin-top: 20px;
+  }
 }
