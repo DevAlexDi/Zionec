@@ -1,4 +1,148 @@
-@media (max-width: 1400px) {
-  
+@media (max-width: 1800px) {
+    .footer-sec .left-side {
+        width: 260px;
+    }
+    .footer-sec .right-side {
+        width: 260px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index {
+        left: -10px;
+    }
+    .footer-sec .left-side {
+        width: 200px;
+    }
+    .footer-sec .right-side {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1430px) {
+    .footer-sec .mid-side .side-of-footer.form-footer:before {
+        transform: skewX(15deg);
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index {
+        left: 0;
+    }
+    .footer-sec .right-side {
+        width: 0;
+    }
+    .footer-sec .right-side .sitemap {
+        display: block;
+        position: absolute;
+        right: 15px;
+
+    }
+
+
+}
+
+@media (max-width: 1199px) {
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs {
+        display: block;
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index {
+        margin: auto;
+        max-width: 205px;
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer .position-butt .but {
+        margin-left: 0;
+        width: 100%;
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input {
+        width: 100%;
+        display: block;
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input:first-child {
+        margin-right: 0;
+    }
+    .footer-sec .mid-side .side-of-footer.form-footer {
+        width: 139%;
+        max-width: 285px;
+        margin-right: 13px;
+    }
+    .footer-sec .left-side .reserved {
+        font-size: 12px;
+    }
+    .footer-sec .left-side {
+        width: 175px;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 1100px) {
     
+    .footer-sec .mid-side .side-of-footer.form-footer {
+        display: none;
+    }  
+    
+}
+
+@media (max-width: 991px) {
+    #block_1c{
+        padding-top: 0;
+    }
+    .footer-sec .mid-side .side-of-footer h6{
+        font-size: 15px;
+    }
+}
+@media (max-width: 767px) {
+    .footer-sec .mid-side{
+        display: block;
+    }
+    .footer-sec .left-side {
+        width: 129px;
+    }
+    .footer-sec .mid-side .side-of-footer {
+        padding: 40px 15px 0px 15px;
+        &:last-child{
+               margin-bottom: 50px;
+        }
+    }
+    .footer-sec .left-side .abs-logo{
+        top: 45px;
+    }
+    .footer-sec .left-side .reserved{
+        display: none;
+    }
+    .footer-sec .right-side .sitemap{
+        position: relative;
+        right: 0;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+        
+    }
+    .footer-sec{
+        display: block;
+    }
+    .footer-sec .left-side .abs-logo{
+        position: relative;
+        top: 0;
+        left: -15px;
+        padding-top: 30px;
+    }
+    .footer-sec .right-side{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        color: #c5c9cc;
+    }
+    .xs-copyright{
+        text-align: center;
+    }
+    .footer-sec .left-side{
+        display: none;
+    }
 }

@@ -210,4 +210,123 @@
       padding-bottom: 5px;
       cursor: pointer; }
 
+.footer-sec {
+  display: flex;
+  position: relative;
+  border-top: 1px solid #f6f7f7; }
+  .footer-sec .abs-scroll-top {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 30; }
+    .footer-sec .abs-scroll-top span {
+      display: block;
+      padding-left: 50px;
+      background-image: url(../img/scroll-down.png);
+      background-repeat: no-repeat;
+      font-size: 14px;
+      font-weight: bold;
+      padding-bottom: 5px;
+      cursor: pointer; }
+  .footer-sec .left-side {
+    width: 375px;
+    flex-shrink: 0;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative; }
+    .footer-sec .left-side .abs-logo {
+      position: absolute;
+      left: 0;
+      top: 80px; }
+    .footer-sec .left-side .reserved {
+      color: #c5c9cc;
+      font-size: 14px; }
+  .footer-sec .right-side {
+    width: 375px;
+    flex-shrink: 0;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; }
+    .footer-sec .right-side .sitemap {
+      font-size: 14px;
+      color: #000;
+      transition: 0.3s; }
+      .footer-sec .right-side .sitemap:hover {
+        color: #4eb77f; }
+  .footer-sec .mid-side {
+    width: 100%;
+    display: flex; }
+    .footer-sec .mid-side .side-of-footer {
+      padding: 70px 15px 100px 15px;
+      width: 100%; }
+      .footer-sec .mid-side .side-of-footer h6 {
+        font-weight: normal;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: ClearSansBold;
+        margin-bottom: 30px; }
+      .footer-sec .mid-side .side-of-footer ul {
+        margin: 0;
+        list-style: none; }
+        .footer-sec .mid-side .side-of-footer ul li {
+          margin-bottom: 5px;
+          position: relative;
+          z-index: 20; }
+          .footer-sec .mid-side .side-of-footer ul li a, .footer-sec .mid-side .side-of-footer ul li span {
+            cursor: pointer;
+            font-size: 16px;
+            color: #a3a4a6;
+            transition: 0.3s; }
+            .footer-sec .mid-side .side-of-footer ul li a:hover, .footer-sec .mid-side .side-of-footer ul li span:hover {
+              color: #4eb77f; }
+      .footer-sec .mid-side .side-of-footer.form-footer {
+        position: relative;
+        width: 182%;
+        max-width: 411px;
+        margin-right: 25px; }
+        .footer-sec .mid-side .side-of-footer.form-footer h6 {
+          color: #fff; }
+        .footer-sec .mid-side .side-of-footer.form-footer:before {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transform: skewX(33deg);
+          background: linear-gradient(135deg, #21606c 0%, #50bb80 100%); }
+        .footer-sec .mid-side .side-of-footer.form-footer .z-index {
+          position: relative;
+          z-index: 10; }
+          .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs {
+            display: flex; }
+            .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input {
+              color: #fff;
+              background: transparent;
+              border: none;
+              outline: none;
+              border-bottom: 1px solid #fff;
+              font-size: 14px;
+              padding-bottom: 5px;
+              margin-bottom: 35px; }
+              .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input:first-child {
+                margin-right: 40px; }
+            .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input::-webkit-input-placeholder {
+              color: #fff; }
+            .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input::-moz-placeholder {
+              color: #fff; }
+            .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input:-moz-placeholder {
+              color: #fff; }
+            .footer-sec .mid-side .side-of-footer.form-footer .z-index .inputs input:-ms-input-placeholder {
+              color: #fff; }
+        .footer-sec .mid-side .side-of-footer.form-footer .position-butt .but {
+          border: 1px solid #fff;
+          outline: none;
+          margin-left: 105px; }
+
 /*# sourceMappingURL=style.css.map */
