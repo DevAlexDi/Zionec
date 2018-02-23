@@ -58,13 +58,6 @@ $(document).ready(function () {
         }
     }, 1000);
 
-    $('.prod2_item').mouseover(function(e) {
-        $(this).find('.more a').fadeIn(400);
-    });
-    $('.prod2_item').mouseleave(function(e) {
-        $(this).find('.more a').fadeOut(400);
-    });
-
     var flag_open_lang = true;
     $('.sity-wrapp').click(function(e){
         e.stopPropagation();
