@@ -79,6 +79,11 @@ $(document).ready(function () {
 
     });
 
+    $('body').click(function() {
+        $('.sity-list').fadeOut(300);
+        flag_open_lang = true;
+    });
+
   
 
     
