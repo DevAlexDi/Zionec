@@ -28,6 +28,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
+        autoplay: true,
         appendDots: $('.reviews_slider_dots'),
         arrows: true,
         nextArrow: '<button type="button" class="slick-next"><img src="img/rev_slider_next.png" alt="Вперед"></button>',
@@ -88,10 +89,26 @@ $(document).ready(function () {
         , showMaskOnFocus: true
     });
 
+    $('.sec-lvl-2 .scroll-down span').click(function() {
+        var t = $('.sec-lvl-2').height() + $('.sec-lvl-1').height();
+        $('body, html').animate({
+            scrollTop: t
+        }, 500);
+    });
 
-    ymaps.ready(init);
+
+    if($('body').children('#map').length > 0) {
+        ymaps.ready(init);
+    }
     
-    
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > $("#fixed_head").height()) {
+            $("#fixed_head").addClass("shown");
+        }
+        else {
+            $("#fixed_head").removeClass("shown");
+        }
+    });
     
 
 });
@@ -163,6 +180,9 @@ function init() {
                 , parseFloat($(this).attr("data-lon"))], 16, {
                 checkZoomRange: false
             });
+        $('body, html').animate({
+            scrollTop: $('#map').offset().top
+        }, 500);
     });
 
 
