@@ -112,7 +112,10 @@
     top: 520px; }
 
   #chosen .logos {
-    margin: 0 15px; } }
+    margin: 0 15px; }
+
+  #map {
+    height: 405px; } }
 @media (max-width: 991px) {
   .sec-lvl-1 .menu-wrapp .side.left-side {
     width: 100px; }
@@ -321,7 +324,7 @@
     padding-top: 30px; }
 
   #about {
-    padding: 40px 0; }
+    padding: 40px 0 0; }
 
   #about .zag {
     margin-bottom: 35px; }
@@ -358,6 +361,13 @@
     top: 10px; }
 
   .modal .modal-dialog .modal-body .input_wrap {
-    margin-top: 20px; } }
+    margin-top: 20px; }
+
+  #map {
+    height: 300px; }
+
+  #contacts .zionec_form {
+    margin-top: 50px;
+    padding: 35px 20px 35px; } }
 
 /*# sourceMappingURL=media-t.css.map */

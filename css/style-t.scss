@@ -578,7 +578,7 @@ body {
 #about {
     color: #a3a4a6;
     font-size: 14px;
-    padding: 65px 0 70px;
+    padding: 65px 0 0;
 
     .zag {
         margin-bottom: 65px;
@@ -753,6 +753,137 @@ body {
     }
 }
 
+/* КОНТАКТЫ */
+
+#map {
+    height: 550px;
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    &:hover {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+#contacts {
+    .breads {
+        list-style: none;
+        margin: 25px 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            color: black;
+            font-size: 12px;
+
+            a, span {
+                color: #989898;
+                cursor: pointer;
+            }
+
+            &:before {
+                content: '/';
+                color: #989898;
+                padding: 0 5px;
+            }
+
+            &:first-child {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .office {
+        color: #a3a4a6;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 35px;
+
+        &:first-child {
+            margin-top: 55px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 40px;
+
+            a {
+                color: #a3a4a6;
+                transition: 0.3s;
+
+                &:hover {
+                    color: #4eb77f;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 20px;
+                height: 19px;
+                display: block;
+                background-image: url(../img/contacts_icons.png);
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: 4px;
+            }
+
+            &.addr:before {
+                background-position: 0 0;
+            }
+            &.phone:before {
+                background-position: 0 -19px;
+            }
+            &.email:before {
+                height: 15px;
+                top: 7px;
+                background-position: 0 -38px;
+            }
+            &.wt:before {
+                background-position: 0 -53px;
+            }
+            &.show_on_map {
+                padding: 0;
+                text-align: center;
+                color: black;
+                font-size: 14px;
+                cursor: pointer;
+                margin-top: 25px;
+
+                &:before {
+                    display: none;
+                }
+
+                &:hover {
+                    color: #4eb77f;
+                }
+            }
+        }
+    }
+
+    .zionec_form {
+        box-shadow: 0px -3px 90px 10px rgba(0, 0, 0, 0.1);
+        padding: 50px 40px 35px;
+        background: white;
+        margin-top: -60px;
+    }
+}
+
 /* МОДАЛКА */
 
 .modal {
@@ -784,149 +915,151 @@ body {
                     top: 0;
                 }
             }
+        }
+    }
 
-            .zag {
-                font-size: 18px;
+}
+
+.zionec_form {
+    .zag {
+        font-size: 18px;
+    }
+
+    .input_wrap {
+        margin-top: 40px;
+        border-bottom: 1px solid #cfd7da;
+        padding: 15px 0 15px 40px;
+        position: relative;
+
+        input {
+            font-size: 14px;
+            color: #a3a4a6;
+            width: 100%;
+            border: 0;
+            outline: none;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 19px;
+            width: 19px;
+            height: 19px;
+            background-image: url(../img/modal_form_icons.png);
+            background-repeat: no-repeat;
+        }
+
+        &.phone:before {
+            background-position: 0 0;
+        }
+        &.name:before {
+            background-position: 0 -19px;
+        }
+    }
+
+    textarea {
+        margin-top: 25px;
+        width: 100%;
+        border: 1px solid #cfd7da;
+        resize: none;
+        color: #a3a4a6;
+        font-size: 12px;
+        padding: 20px;
+        height: 80px;
+        outline: none;
+    }
+
+    input::-webkit-input-placeholder {
+        color:#a3a4a6;
+    }
+    input::-moz-placeholder{
+        color:#a3a4a6;
+    }
+    input:-moz-placeholder{
+        color:#a3a4a6;
+    }
+    input:-ms-input-placeholder{
+        color:#a3a4a6;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color:#a3a4a6;
+    }
+    textarea::-moz-placeholder{
+        color:#a3a4a6;
+    }
+    textarea:-moz-placeholder{
+        color:#a3a4a6;
+    }
+    textarea:-ms-input-placeholder{
+        color:#a3a4a6;
+    }
+
+    .checkbox_wrap {
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 20px;
+        margin-top: 35px;
+        .check-style {
+            margin-right: 15px;
+
+            .checkbox {
+                width: 0;
+                height: 0;
+                display: block;
+                position: absolute;
+                left: -5000px;
+                top: 0;
             }
-
-            .input_wrap {
-                margin-top: 40px;
-                border-bottom: 1px solid #cfd7da;
-                padding: 15px 0 15px 40px;
+            label {
+                display: block;
+                width: 18px;
+                height: 18px;
+                background: #fff;
+                border: 3px solid #d6d6d6;
                 position: relative;
-
-                input {
-                    font-size: 14px;
-                    color: #a3a4a6;
-                    width: 100%;
-                    border: 0;
-                    outline: none;
-                }
+                cursor: pointer;
 
                 &:before {
-                    content: '';
+                    content: "";
+                    display: block;
                     position: absolute;
-                    left: 10px;
-                    top: 19px;
-                    width: 19px;
-                    height: 19px;
-                    background-image: url(../img/modal_form_icons.png);
-                    background-repeat: no-repeat;
-                }
-
-                &.phone:before {
-                    background-position: 0 0;
-                }
-                &.name:before {
-                    background-position: 0 -19px;
+                    opacity: 0;
+                    width: 8px;
+                    height: 8px;
+                    background: #d6d6d6;
+                    top: 2px;
+                    left: 2px;
                 }
             }
+            .checkbox:checked+label {
+                &:before {
+                    opacity: 1;
+                }
+            }
+        }
+        .check_label {
+            color: #a3a4a6;
+            font-size: 10px;
 
-            textarea {
-                margin-top: 25px;
-                width: 100%;
-                border: 1px solid #cfd7da;
-                resize: none;
+            a {
                 color: #a3a4a6;
-                font-size: 12px;
-                padding: 20px;
-                height: 80px;
-                outline: none;
-            }
+                text-decoration: underline;
 
-            input::-webkit-input-placeholder {
-                color:#a3a4a6;
-            }
-            input::-moz-placeholder{
-                color:#a3a4a6;
-            }
-            input:-moz-placeholder{
-                color:#a3a4a6;
-            }
-            input:-ms-input-placeholder{
-                color:#a3a4a6;
-            }
-
-            textarea::-webkit-input-placeholder {
-                color:#a3a4a6;
-            }
-            textarea::-moz-placeholder{
-                color:#a3a4a6;
-            }
-            textarea:-moz-placeholder{
-                color:#a3a4a6;
-            }
-            textarea:-ms-input-placeholder{
-                color:#a3a4a6;
-            }
-
-            .checkbox_wrap {
-                display: flex;
-                justify-content: flex-start;
-                position: relative;
-                overflow: hidden;
-                margin-bottom: 20px;
-                margin-top: 35px;
-                .check-style {
-                    margin-right: 15px;
-
-                    .checkbox {
-                        width: 0;
-                        height: 0;
-                        display: block;
-                        position: absolute;
-                        left: -5000px;
-                        top: 0;
-                    }
-                    label {
-                        display: block;
-                        width: 18px;
-                        height: 18px;
-                        background: #fff;
-                        border: 3px solid #d6d6d6;
-                        position: relative;
-                        cursor: pointer;
-
-                        &:before {
-                            content: "";
-                            display: block;
-                            position: absolute;
-                            opacity: 0;
-                            width: 8px;
-                            height: 8px;
-                            background: #d6d6d6;
-                            top: 2px;
-                            left: 2px;
-                        }
-                    }
-                    .checkbox:checked+label {
-                        &:before {
-                            opacity: 1;
-                        }
-                    }
+                &:hover {
+                    text-decoration: none;
                 }
-                .check_label {
-                    color: #a3a4a6;
-                    font-size: 10px;
-
-                    a {
-                        color: #a3a4a6;
-                        text-decoration: underline;
-
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
-
-            .but {
-                border: none;
-                outline: none;
-                display: block;
-                margin: 40px auto 0;
             }
         }
     }
 
+    .but {
+        border: none;
+        outline: none;
+        display: block;
+        margin: 40px auto 0;
+    }
 }

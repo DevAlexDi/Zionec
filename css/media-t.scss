@@ -147,6 +147,10 @@
   #chosen .logos {
     margin: 0 15px;
   }
+
+  #map {
+    height: 405px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -382,7 +386,7 @@
   }
 
   #about {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
   #about .zag {
     margin-bottom: 35px;
@@ -427,5 +431,13 @@
   }
   .modal .modal-dialog .modal-body .input_wrap {
     margin-top: 20px;
+  }
+
+  #map {
+    height: 300px;
+  }
+  #contacts .zionec_form {
+    margin-top: 50px;
+    padding: 35px 20px 35px;
   }
 }

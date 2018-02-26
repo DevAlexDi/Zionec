@@ -14,6 +14,11 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.open_modal').click(function(e) {
+        e.preventDefault();
+        $('#modal_with_com').modal('show');
+    });
     
     
     
@@ -83,10 +88,83 @@ $(document).ready(function () {
         , showMaskOnFocus: true
     });
 
-    
-    
+
+    ymaps.ready(init);
     
     
     
 
 });
+
+
+function init() {
+
+
+    var myMap = new ymaps.Map("map", {
+        center: [55.753215, 37.622504]
+        , zoom: 16
+        , controls: ['zoomControl']
+    });
+
+
+    myMap.behaviors.disable('multiTouch');
+    myMap.behaviors.disable('scrollZoom');
+    var myGeoObjects = [];
+    var flag_for_center = true;
+
+
+
+    $(".office").each(function (e) {
+        var latt = $(this).find('.show_on_map').attr("data-lat");
+        var longg = $(this).find('.show_on_map').attr("data-lon");
+        if (flag_for_center) {
+            myMap.setCenter([latt, longg], 16, {
+                checkZoomRange: false
+            });
+            flag_for_center = false;
+        }
+        myGeoObjects[e] = new ymaps.Placemark([latt, longg], {
+            clusterCaption: 'Заголовок'
+        }, {
+            iconLayout: 'default#image'
+            , iconImageHref: 'img/map_marker.png'
+            , iconImageSize: [39, 51]
+            , iconImageOffset: [-19.5, -51]
+        });
+    });
+
+
+    var clusterIcons = [{
+        href: 'img/marker-1.png'
+        , size: [39, 51]
+        , offset: [0, 0]
+    }];
+
+
+    var clusterer = new ymaps.Clusterer({
+        clusterDisableClickZoom: false
+        , clusterOpenBalloonOnClick: false
+        , clusterBalloonPanelMaxMapArea: 0
+        , clusterBalloonContentLayoutWidth: 300
+        , clusterBalloonContentLayoutHeight: 200
+        , clusterBalloonPagerSize: 2
+        , clusterBalloonPagerVisible: false
+    });
+
+
+    clusterer.add(myGeoObjects);
+    myMap.geoObjects.add(clusterer);
+
+
+
+    $('.show_on_map').click(function(){
+        myMap.setCenter(
+            [parseFloat($(this).attr("data-lat"))
+                , parseFloat($(this).attr("data-lon"))], 16, {
+                checkZoomRange: false
+            });
+    });
+
+
+
+}
