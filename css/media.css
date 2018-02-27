@@ -15,7 +15,8 @@
     width: 200px; } }
 @media (max-width: 1430px) {
   .footer-sec .mid-side .side-of-footer.form-footer:before {
-    transform: skewX(15deg); }
+    -webkit-transform: skewX(15deg);
+            transform: skewX(15deg); }
 
   .footer-sec .mid-side .side-of-footer.form-footer .z-index {
     left: 0; }
