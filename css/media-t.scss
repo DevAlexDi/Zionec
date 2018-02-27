@@ -182,11 +182,12 @@
   }
 
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .note-image {
-    width: 335px;
+    width: 380px;
     top: 195px;
   }
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .product {
     left: 155px;
+    width: 150px;
   }
 
   #chosen {
@@ -342,6 +343,13 @@
 
   #big_grey_triangle .prod2_img {
     padding-left: 0;
+
+    img {
+      margin: auto;
+    }
+  }
+  #big_grey_triangle .prod2 .text .more {
+    text-align: center;
   }
   #big_grey_triangle .prod2 .circle {
     display: none;

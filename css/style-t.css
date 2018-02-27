@@ -381,6 +381,12 @@ body {
     z-index: 0; }
   #block_1c .zag {
     margin-bottom: 120px; }
+  #block_1c .black_link {
+    display: inline-block;
+    margin-top: 25px;
+    color: black;
+    font: 14px ClearSansBold;
+    text-transform: uppercase; }
   #block_1c .wrap_1c {
     display: -webkit-box;
     display: -ms-flexbox;
