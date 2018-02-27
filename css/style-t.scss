@@ -184,7 +184,7 @@ body {
         background: -webkit-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
         background: linear-gradient(-135deg, #21606c 0%, #50bb80 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 ); */
-        
+
         &:hover {
             opacity: 0.8;
         }
@@ -272,7 +272,6 @@ body {
         width: 308px;
         height: 324px;
         background: url(../img/triangle_left.png) no-repeat center;
-        display: none;
     }
 
     .prod1_item {
@@ -476,6 +475,11 @@ body {
             flex-shrink: 0;
             width: 100px;
             margin-right: 40px;
+
+            svg {
+                fill: #00b87d;
+                width: 100%;
+            }
         }
 
         .text {
@@ -741,15 +745,15 @@ body {
         .grad_text {
             font: 72px ClearSansBold;
             line-height: 1.0;
-            /*background: linear-gradient(to right, #6c0109, #ec2b3e);
+            background: linear-gradient(to right, #6c0109, #ec2b3e);
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;*/
-            color: #55c683;
+            -webkit-text-fill-color: transparent;
+            color: #6c0109;
             display: inline-block;
         }
-        /*.grad_text:-ms-input-placeholder, .grad_text:-ms-input-placeholder, :root .grad_text, :root .grad_text, :root .grad_text {
+        .grad_text:-ms-input-placeholder, .grad_text:-ms-input-placeholder, :root .grad_text, :root .grad_text, :root .grad_text {
             -webkit-text-fill-color: currentColor;
-            background: none; }*/
+            background: none; }
 
         p {
             color: black;
@@ -771,7 +775,7 @@ body {
     background: #f6f7f7;
     position: relative;
 
-    /*&:before {
+    &:before {
         content: '';
         position: absolute;
         right: 0;
@@ -781,7 +785,7 @@ body {
         margin-top: -179px;
         background: url(../img/triangle_right.png) no-repeat center;
         background-size: cover;
-    }*/
+    }
 
     .zag {
         margin-bottom: 30px;
@@ -903,6 +907,12 @@ body {
             right: 0;
             background: center center no-repeat;
             background-size: cover;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                opacity: 0.6;
+            }
         }
     }
 }

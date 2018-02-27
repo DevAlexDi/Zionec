@@ -223,8 +223,7 @@ body {
     margin-top: -162px;
     width: 308px;
     height: 324px;
-    background: url(../img/triangle_left.png) no-repeat center;
-    display: none; }
+    background: url(../img/triangle_left.png) no-repeat center; }
   #big_grey_triangle .prod1_item .img {
     position: relative;
     width: 46%; }
@@ -363,6 +362,9 @@ body {
       flex-shrink: 0;
       width: 100px;
       margin-right: 40px; }
+      #block_1c .wrap_1c .icon svg {
+        fill: #00b87d;
+        width: 100%; }
     #block_1c .wrap_1c .text {
       color: #a3a4a6;
       font-size: 14px;
@@ -525,18 +527,18 @@ body {
     margin-bottom: 30px; }
   #advantages .adv {
     text-align: center;
-    max-width: 205px;
-    /*.grad_text:-ms-input-placeholder, .grad_text:-ms-input-placeholder, :root .grad_text, :root .grad_text, :root .grad_text {
-        -webkit-text-fill-color: currentColor;
-        background: none; }*/ }
+    max-width: 205px; }
     #advantages .adv .grad_text {
       font: 72px ClearSansBold;
       line-height: 1.0;
-      /*background: linear-gradient(to right, #6c0109, #ec2b3e);
+      background: linear-gradient(to right, #6c0109, #ec2b3e);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;*/
-      color: #55c683;
+      -webkit-text-fill-color: transparent;
+      color: #6c0109;
       display: inline-block; }
+    #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text {
+      -webkit-text-fill-color: currentColor;
+      background: none; }
     #advantages .adv p {
       color: black;
       font: 18px ClearSansBold;
@@ -549,18 +551,17 @@ body {
 #product_page {
   padding: 60px 0 65px;
   background: #f6f7f7;
-  position: relative;
-  /*&:before {
-      content: '';
-      position: absolute;
-      right: 0;
-      top: 50%;
-      width: 248px;
-      height: 358px;
-      margin-top: -179px;
-      background: url(../img/triangle_right.png) no-repeat center;
-      background-size: cover;
-  }*/ }
+  position: relative; }
+  #product_page:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 248px;
+    height: 358px;
+    margin-top: -179px;
+    background: url(../img/triangle_right.png) no-repeat center;
+    background-size: cover; }
   #product_page .zag {
     margin-bottom: 30px; }
   #product_page .grey_zag {
@@ -643,7 +644,11 @@ body {
       bottom: 0;
       right: 0;
       background: center center no-repeat;
-      background-size: cover; }
+      background-size: cover;
+      cursor: pointer;
+      transition: 0.3s; }
+      #product_text .img_wrap .img:hover {
+        opacity: 0.6; }
 
 /* КОНТАКТЫ */
 #map {

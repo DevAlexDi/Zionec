@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
+    <link href="css/default-skin.css" rel="stylesheet">
+    <link href="css/photoswipe.css" rel="stylesheet">
     <link href="css/style-t.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/media-t.css" rel="stylesheet">  
@@ -214,10 +216,10 @@
                 <div class="col-sm-12 col-md-4 text-center"><a href="#" class="but but_with_icon complex"><span>Комплексное решение</span></a></div>
             </div>
             <div class="row">
-                <div class="col-sm-4"><div class="img_wrap"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
-                <div class="col-sm-4"><div class="img_wrap"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
-                <div class="col-sm-4"><div class="img_wrap"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
-                <div class="col-sm-4"><div class="img_wrap"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
+                <div class="col-sm-4"><div class="img_wrap" data-src="img/product_text_img.jpg" data-size="360x198" data-index="0"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
+                <div class="col-sm-4"><div class="img_wrap" data-src="img/product_text_img.jpg" data-size="360x198" data-index="1"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
+                <div class="col-sm-4"><div class="img_wrap" data-src="img/product_text_img.jpg" data-size="360x198" data-index="2"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
+                <div class="col-sm-4"><div class="img_wrap" data-src="img/product_text_img.jpg" data-size="360x198" data-index="3"><div class="img" style="background-image: url(img/product_text_img.jpg)"></div></div></div>
             </div>
         </div>
     </section>
@@ -474,9 +476,43 @@
             </div>
         </div>
     </div>
-    
-    
-    
+
+
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div>
+                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div>
+                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                </button>
+                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                </button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     
     
     
@@ -486,6 +522,8 @@
       <script src="js/inputmask.js"></script>
     <script src="js/jquery.inputmask.js"></script>
     <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="js/photoswipe-ui-default.min.js"></script>
+    <script src="js/photoswipe.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 

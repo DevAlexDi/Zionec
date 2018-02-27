@@ -114,6 +114,46 @@ $(document).ready(function () {
             $("#fixed_head").removeClass("shown");
         }
     });
+
+    if($('body').children('#product_page').length > 0) {
+        $('#product_text').each(function () {
+            var pic = $(this)
+                , getItems;
+            var pswp = $('.pswp')[0];
+            pic.on('click', '.img_wrap', function (event) {
+                getItems = function () {
+                    var items = [];
+                    pic.find('.img_wrap').each(function (e) {
+                        if(!$(this).hasClass("slick-cloned")){
+                            var href = $(this).attr('data-src')
+                                , size = $(this).data('size').split('x')
+                                , width = size[0]
+                                , height = size[1];
+                            var item = {
+                                src: href
+                                , w: width
+                                , h: height
+                            }
+                            items.push(item);
+                        }
+                    });
+                    return items;
+                }
+                var items = getItems();
+                event.preventDefault();
+
+                var index = $(this).attr("data-index");
+                var options = {
+                    index: parseInt(index)
+                    , bgOpacity: 0.7
+                    , showHideOpacity: true
+                }
+
+                var lightBox = new PhotoSwipe(pswp, PhotoSwipeUI_Default, items, options);
+                lightBox.init();
+            });
+        });
+    }
     
 
 });
