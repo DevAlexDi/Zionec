@@ -153,16 +153,12 @@ body {
   outline: none;
   z-index: 10;
   transition: 0.3s;
-  background: #1b5469;
-  /* Old browsers */
+  background: none;
+  /*background: #1b5469;
   background: -moz-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(-135deg, #21606c 0%, #50bb80 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */ }
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 ); */ }
   .sec-lvl-2 .main-slider .slick-arrow:hover {
     opacity: 0.8; }
   .sec-lvl-2 .main-slider .slick-arrow.slick-prev {
@@ -227,9 +223,11 @@ body {
     margin-top: -162px;
     width: 308px;
     height: 324px;
-    background: url(../img/triangle_left.png) no-repeat center; }
+    background: url(../img/triangle_left.png) no-repeat center;
+    display: none; }
   #big_grey_triangle .prod1_item .img {
-    position: relative; }
+    position: relative;
+    width: 46%; }
     #big_grey_triangle .prod1_item .img .circle1 {
       width: 16px;
       height: 16px;
@@ -246,9 +244,8 @@ body {
     animation: ripplesmall 0.6s linear infinite; }
   #big_grey_triangle .prod_flex {
     display: flex;
-    align-items: center; }
-    #big_grey_triangle .prod_flex.first_prod {
-      margin-top: 30px; }
+    align-items: center;
+    margin-top: 30px; }
     #big_grey_triangle .prod_flex .markers ul {
       list-style: none;
       margin: 0;
@@ -389,6 +386,10 @@ body {
     #reviews .reviews_slider .rev {
       outline: none;
       padding: 0 27.5px; }
+      #reviews .reviews_slider .rev .img {
+        height: 75px; }
+        #reviews .reviews_slider .rev .img img {
+          max-height: 100%; }
       #reviews .reviews_slider .rev .rev_wrap {
         margin-top: 65px;
         display: flex; }
@@ -413,7 +414,9 @@ body {
           margin-left: 12px; }
           #reviews .reviews_slider .rev .rev_wrap .text span {
             color: #3a3d3e;
-            font-size: 12px; }
+            font-size: 12px;
+            height: 35px;
+            display: block; }
           #reviews .reviews_slider .rev .rev_wrap .text h4 {
             color: #3a3d3e;
             font: 18px ClearSansBold;
@@ -432,16 +435,12 @@ body {
       border: none;
       outline: none;
       transition: 0.3s;
-      background: #1b5469;
-      /* Old browsers */
+      background: none;
+      /*background: #1b5469;
       background: -moz-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
-      /* FF3.6-15 */
       background: -webkit-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
-      /* Chrome10-25,Safari5.1-6 */
       background: linear-gradient(-135deg, #21606c 0%, #50bb80 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 );
-      /* IE6-9 fallback on horizontal gradient */ }
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 ); */ }
       #reviews .reviews_slider .slick-arrow:hover {
         opacity: 0.8; }
       #reviews .reviews_slider .slick-arrow.slick-prev {
@@ -506,13 +505,12 @@ body {
     -webkit-box-shadow: 0 0 0 5px rgba(51, 130, 115, 0.25), 0 0 0 10px rgba(51, 130, 115, 0);
     box-shadow: 0 0 0 5px rgba(51, 130, 115, 0.25), 0 0 0 10px rgba(51, 130, 115, 0); } }
 #about {
-  color: #a3a4a6;
+  color: black;
   font-size: 14px;
   padding: 65px 0 0; }
   #about .zag {
     margin-bottom: 65px; }
   #about p {
-    text-align: center;
     line-height: 1.3;
     margin-bottom: 15px; }
 
@@ -521,22 +519,24 @@ body {
   padding: 35px 0; }
   #advantages h2 {
     text-align: center;
-    color: #d9d9d9;
+    color: black;
+    text-transform: uppercase;
     font: 26px ClearSansBold;
     margin-bottom: 30px; }
   #advantages .adv {
     text-align: center;
-    max-width: 205px; }
+    max-width: 205px;
+    /*.grad_text:-ms-input-placeholder, .grad_text:-ms-input-placeholder, :root .grad_text, :root .grad_text, :root .grad_text {
+        -webkit-text-fill-color: currentColor;
+        background: none; }*/ }
     #advantages .adv .grad_text {
       font: 72px ClearSansBold;
       line-height: 1.0;
-      background: linear-gradient(to right, #6c0109, #ec2b3e);
+      /*background: linear-gradient(to right, #6c0109, #ec2b3e);
       -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      -webkit-text-fill-color: transparent;*/
+      color: #55c683;
       display: inline-block; }
-    #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv .grad_text:-ms-input-placeholder, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text, #advantages .adv :root .grad_text {
-      -webkit-text-fill-color: currentColor;
-      background: none; }
     #advantages .adv p {
       color: black;
       font: 18px ClearSansBold;
@@ -549,17 +549,18 @@ body {
 #product_page {
   padding: 60px 0 65px;
   background: #f6f7f7;
-  position: relative; }
-  #product_page:before {
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 50%;
-    width: 248px;
-    height: 358px;
-    margin-top: -179px;
-    background: url(../img/triangle_right.png) no-repeat center;
-    background-size: cover; }
+  position: relative;
+  /*&:before {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 248px;
+      height: 358px;
+      margin-top: -179px;
+      background: url(../img/triangle_right.png) no-repeat center;
+      background-size: cover;
+  }*/ }
   #product_page .zag {
     margin-bottom: 30px; }
   #product_page .grey_zag {
@@ -572,8 +573,7 @@ body {
     line-height: 1.2; }
   #product_page .prod_flex {
     display: flex;
-    align-items: center;
-    margin-top: 30px; }
+    align-items: center; }
     #product_page .prod_flex.first_prod {
       margin-top: 30px; }
     #product_page .prod_flex .markers ul {
@@ -596,7 +596,8 @@ body {
           top: 0;
           position: absolute; }
     #product_page .prod_flex .img {
-      position: relative; }
+      position: relative;
+      width: 46%; }
       #product_page .prod_flex .img .circle1 {
         width: 16px;
         height: 16px;
@@ -613,7 +614,7 @@ body {
       animation: ripplesmall 0.6s linear infinite; }
   #product_page .price {
     font-size: 24px;
-    margin-right: 0;
+    margin-left: 46%;
     margin-bottom: 15px; }
   #product_page .more {
     text-align: center;
@@ -715,7 +716,6 @@ body {
       background-position: 0 -53px; }
     #contacts .office p.show_on_map {
       padding: 0;
-      text-align: center;
       color: black;
       font-size: 14px;
       cursor: pointer;
