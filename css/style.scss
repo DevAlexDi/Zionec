@@ -172,7 +172,8 @@
                             color: #242729;
                             margin-bottom: 30px;
                             background-repeat: no-repeat;
-                            background-image: url(../img/check.png);
+                            background-image: url(../img/tick-inside-circle.svg);
+                            background-size: 27px 27px;
                             background-position: top left;
                             font-size: 18px;
                             span{
@@ -255,7 +256,8 @@
         span{
             display: block;
             padding-left: 50px;
-            background-image: url(../img/scroll-down.png?v=1.0);
+            background-image: url(../img/down-arrow.svg);
+            background-size: 26px 26px;
             background-repeat: no-repeat;
             font-size: 14px;
             font-weight: bold;
@@ -328,9 +330,10 @@
     .mid-side{
         width: 100%;
         display: flex;
+        justify-content: space-between;
         .side-of-footer{
             padding: 70px 15px 100px 15px;
-            width: 100%;
+            /*width: 100%;*/
             h6{
                 font-weight: normal;
                 font-size: 18px;
@@ -361,7 +364,7 @@
             }
             &.form-footer{
                 position: relative;
-                width: 182%;
+                /*width: 182%;*/
                 max-width: 411px;
                 margin-right: 25px;
                 h6{

@@ -160,7 +160,8 @@
             color: #242729;
             margin-bottom: 30px;
             background-repeat: no-repeat;
-            background-image: url(../img/check.png);
+            background-image: url(../img/tick-inside-circle.svg);
+            background-size: 27px 27px;
             background-position: top left;
             font-size: 18px; }
             .sec-lvl-2 .main-slider .one-slide .flex-first-slide .left-side .service-list li span {
@@ -230,7 +231,8 @@
     .sec-lvl-2 .scroll-down span {
       display: block;
       padding-left: 50px;
-      background-image: url(../img/scroll-down.png?v=1.0);
+      background-image: url(../img/down-arrow.svg);
+      background-size: 26px 26px;
       background-repeat: no-repeat;
       font-size: 14px;
       font-weight: bold;
@@ -307,10 +309,13 @@
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
     .footer-sec .mid-side .side-of-footer {
       padding: 70px 15px 100px 15px;
-      width: 100%; }
+      /*width: 100%;*/ }
       .footer-sec .mid-side .side-of-footer h6 {
         font-weight: normal;
         font-size: 18px;
@@ -334,7 +339,7 @@
               color: #4eb77f; }
       .footer-sec .mid-side .side-of-footer.form-footer {
         position: relative;
-        width: 182%;
+        /*width: 182%;*/
         max-width: 411px;
         margin-right: 25px; }
         .footer-sec .mid-side .side-of-footer.form-footer h6 {

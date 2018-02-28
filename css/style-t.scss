@@ -86,7 +86,6 @@ body {
                 left: 0;
                 top: 2px;
                 position: absolute;
-                background-image: url(../img/but_icons.png);
                 background-repeat: no-repeat;
             }
         }
@@ -95,14 +94,16 @@ body {
             span:before {
                 width: 19px;
                 height: 15px;
-                background-position: 0 0;
+                background-image: url(../img/cloud-storage-download.svg);
+                background-size: 19px 15px;
             }
         }
         &.quest {
             span:before {
                 width: 19px;
                 height: 15px;
-                background-position: 0 -15px;
+                background-image: url(../img/support.svg);
+                background-size: 19px 15px;
             }
         }
         &.complex {
@@ -110,7 +111,8 @@ body {
                 width: 19px;
                 height: 19px;
                 top: 0;
-                background-position: 0 -30px;
+                background-image: url(../img/komplexnoe_reshenie.svg);
+                background-size: 19px 19px;
             }
         }
     }
@@ -218,7 +220,7 @@ body {
         align-items: center;
         margin: 0 160px;
 
-        div {
+        .logo_item {
             padding: 0 23px;
 
             img {
@@ -228,7 +230,7 @@ body {
                 transition: 0.3s;
             }
 
-            &.active img {
+            &.slick-current img {
                 filter: grayscale(0%);
                 opacity: 1;
             }
@@ -324,7 +326,8 @@ body {
                         width: 18px;
                         height: 18px;
                         display: block;
-                        background: url(../img/marker.png) no-repeat center;
+                        background: url(../img/tick-inside-circle.svg) no-repeat center;
+                        background-size: 18px 18px;
                         left: 0;
                         top: 0;
                         position: absolute;
@@ -837,7 +840,8 @@ body {
                         width: 18px;
                         height: 18px;
                         display: block;
-                        background: url(../img/marker.png) no-repeat center;
+                        background: url(../img/tick-inside-circle.svg) no-repeat center;
+                        background-size: 18px 18px;
                         left: 0;
                         top: 0;
                         position: absolute;
@@ -1008,7 +1012,7 @@ body {
                 width: 20px;
                 height: 19px;
                 display: block;
-                background-image: url(../img/contacts_icons.png);
+                background-size: 20px 19px;
                 background-repeat: no-repeat;
                 position: absolute;
                 left: 0;
@@ -1016,18 +1020,19 @@ body {
             }
 
             &.addr:before {
-                background-position: 0 0;
+                background-image: url(../img/placeholder.svg);
             }
             &.phone:before {
-                background-position: 0 -19px;
+                background-image: url(../img/phone-call-green.svg);
             }
             &.email:before {
                 height: 15px;
                 top: 7px;
-                background-position: 0 -38px;
+                background-size: 20px 15px;
+                background-image: url(../img/envelope.svg);
             }
             &.wt:before {
-                background-position: 0 -53px;
+                background-image: url(../img/passage-of-time.svg);
             }
             &.show_on_map {
                 padding: 0;
@@ -1118,15 +1123,15 @@ body {
             top: 19px;
             width: 19px;
             height: 19px;
-            background-image: url(../img/modal_form_icons.png);
+            background-size: 19px 19px;
             background-repeat: no-repeat;
         }
 
         &.phone:before {
-            background-position: 0 0;
+            background-image: url(../img/phone-call.svg);
         }
         &.name:before {
-            background-position: 0 -19px;
+            background-image: url(../img/avatar.svg);
         }
     }
 

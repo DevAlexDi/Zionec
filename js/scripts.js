@@ -19,8 +19,31 @@ $(document).ready(function () {
         e.preventDefault();
         $('#modal_with_com').modal('show');
     });
-    
-    
+
+    $('#chosen .logos').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: false,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        arrows: false,
+        centerMode: true,
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }
+        ]
+    });
     
     
     $('.reviews_slider').slick({
