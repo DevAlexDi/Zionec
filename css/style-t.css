@@ -327,9 +327,19 @@ body {
     #big_grey_triangle .prod_desc .price {
       font-size: 18px;
       margin-right: 25%;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      margin-top: 15px;
+      font-weight: bold; }
     #big_grey_triangle .prod_desc .more {
-      height: 40px; }
+      height: 40px;
+      width: 100%; }
+      #big_grey_triangle .prod_desc .more .but {
+        max-width: 100%; }
+    #big_grey_triangle .prod_desc .more1 {
+      width: 100%; }
+      #big_grey_triangle .prod_desc .more1 .but {
+        max-width: 100%;
+        background: #1b5469 !important; }
     #big_grey_triangle .prod_desc.third_prod .price {
       margin-right: 30%; }
   #big_grey_triangle .second_prods_zag {

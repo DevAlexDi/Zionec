@@ -52,6 +52,10 @@
     height: 217px;
     margin-top: -108.5px;
   }
+
+  #big_grey_triangle:after {
+    top: 535px;
+  }
 }
 
 @media (max-width: 1550px) {
@@ -75,10 +79,6 @@
 }
 
 @media (max-width: 1400px) {
-  #big_grey_triangle:after {
-    top: 420px;
-  }
-
   .sec-lvl-2 .main-slider .one-slide .flex-first-slide .right-side .note-image {
     width: 550px;
     top: 55px;
@@ -154,6 +154,10 @@
 
   #map {
     height: 405px;
+  }
+
+  #big_grey_triangle .prod_desc .more .but, #big_grey_triangle .prod_desc .more1 .but {
+    font-size: 12px;
   }
 }
 
@@ -329,6 +333,10 @@
   }
   #big_grey_triangle .prod_desc .price {
     margin-right: 0!important;
+  }
+  #big_grey_triangle .prod_desc .more,
+  #big_grey_triangle .prod_desc .more1 {
+    text-align: center;
   }
 
   #big_grey_triangle .prod2_img {

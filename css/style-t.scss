@@ -393,9 +393,24 @@ body {
             font-size: 18px;
             margin-right: 25%;
             margin-bottom: 15px;
+            margin-top: 15px;
+            font-weight: bold;
         }
         .more {
             height: 40px;
+            width: 100%;
+
+            .but {
+                max-width: 100%;
+            }
+        }
+        .more1 {
+            width: 100%;
+
+            .but {
+                max-width: 100%;
+                background: #1b5469!important;
+            }
         }
 
         &.third_prod {

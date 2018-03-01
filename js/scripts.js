@@ -64,6 +64,7 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
+        centerMode: true,
         autoplay: true,
         appendDots: $('.reviews_slider_dots'),
         arrows: true,
