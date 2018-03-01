@@ -20,6 +20,15 @@ $(document).ready(function () {
         $('#modal_with_com').modal('show');
     });
 
+    $('.phantom_click').click(function(e) {
+        var url = $(this).prev().attr('href');
+        location.href = url;
+    });
+
+    $('body').keyup(function(e) {
+        if (e.which == 27) $('.modal').modal('hide');
+    });
+
     $('#chosen .logos').slick({
         infinite: true,
         slidesToShow: 5,

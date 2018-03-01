@@ -177,7 +177,7 @@ body {
 #chosen {
   padding: 35px 0 110px; }
   #chosen h2 {
-    color: #d9d9d9;
+    color: black;
     font: 26px ClearSansBold;
     text-transform: uppercase;
     margin-bottom: 35px; }
@@ -358,11 +358,14 @@ body {
       padding-left: 10px;
       color: #a3a4a6;
       line-height: 1.2; }
-      #big_grey_triangle .prod2 .text h5 {
+      #big_grey_triangle .prod2 .text .h5 {
         color: #3a3d3e;
         font: 18px ClearSansBold;
         margin-top: 15px;
+        display: block;
         margin-bottom: 20px; }
+      #big_grey_triangle .prod2 .text .phantom_click {
+        cursor: pointer; }
       #big_grey_triangle .prod2 .text .more {
         margin-top: 45px;
         height: 40px; }
@@ -426,13 +429,13 @@ body {
     position: relative; }
     #reviews .reviews_slider .rev {
       outline: none;
-      padding: 0 27.5px; }
+      padding: 0 10px; }
       #reviews .reviews_slider .rev .img {
         height: 75px; }
         #reviews .reviews_slider .rev .img img {
           max-height: 100%; }
       #reviews .reviews_slider .rev .rev_wrap {
-        margin-top: 65px;
+        margin-top: 25px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; }
@@ -471,7 +474,7 @@ body {
           #reviews .reviews_slider .rev .rev_wrap .text h4 {
             color: #3a3d3e;
             font: 18px ClearSansBold;
-            margin-bottom: 25px;
+            margin-bottom: 10px;
             margin-top: 5px; }
       #reviews .reviews_slider .rev.slick-current .rev_wrap .circle .circle_center {
         opacity: 1;
@@ -715,17 +718,6 @@ body {
 #map {
   height: 550px;
   position: relative; }
-  #map:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.6); }
-  #map:hover:after {
-    display: none; }
 
 #contacts .breads {
   list-style: none;

@@ -316,12 +316,18 @@
     .footer-sec .mid-side .side-of-footer {
       padding: 70px 15px 100px 15px;
       /*width: 100%;*/ }
-      .footer-sec .mid-side .side-of-footer h6 {
+      .footer-sec .mid-side .side-of-footer h6, .footer-sec .mid-side .side-of-footer .h6_link {
         font-weight: normal;
         font-size: 18px;
         text-transform: uppercase;
         font-family: ClearSansBold;
-        margin-bottom: 30px; }
+        margin-bottom: 30px;
+        color: #252525;
+        display: block;
+        -webkit-transition: 0.3s;
+        transition: 0.3s; }
+      .footer-sec .mid-side .side-of-footer .h6_link:hover {
+        color: #4eb77f; }
       .footer-sec .mid-side .side-of-footer ul {
         margin: 0;
         list-style: none; }

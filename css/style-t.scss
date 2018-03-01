@@ -208,7 +208,7 @@ body {
     padding: 35px 0 110px;
 
     h2 {
-        color: #d9d9d9;
+        color: black;
         font: 26px ClearSansBold;
         text-transform: uppercase;
         margin-bottom: 35px;
@@ -432,11 +432,16 @@ body {
             color: #a3a4a6;
             line-height: 1.2;
 
-            h5 {
+            .h5 {
                 color: #3a3d3e;
                 font: 18px ClearSansBold;
                 margin-top: 15px;
+                display: block;
                 margin-bottom: 20px;
+            }
+
+            .phantom_click {
+                cursor: pointer;
             }
 
             .more {
@@ -526,7 +531,7 @@ body {
 
         .rev {
             outline: none;
-            padding: 0 27.5px;
+            padding: 0 10px;
 
             .img {
                 height: 75px;
@@ -537,7 +542,7 @@ body {
             }
 
             .rev_wrap {
-                margin-top: 65px;
+                margin-top: 25px;
                 display: flex;
 
                 .circle {
@@ -574,7 +579,7 @@ body {
                     h4 {
                         color: #3a3d3e;
                         font: 18px ClearSansBold;
-                        margin-bottom: 25px;
+                        margin-bottom: 10px;
                         margin-top: 5px;
                     }
                 }
@@ -934,23 +939,6 @@ body {
 #map {
     height: 550px;
     position: relative;
-
-    &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(255, 255, 255, 0.6);
-    }
-
-    &:hover {
-        &:after {
-            display: none;
-        }
-    }
 }
 
 #contacts {

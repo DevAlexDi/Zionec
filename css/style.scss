@@ -334,12 +334,18 @@
         .side-of-footer{
             padding: 70px 15px 100px 15px;
             /*width: 100%;*/
-            h6{
+            h6, .h6_link {
                 font-weight: normal;
                 font-size: 18px;
                 text-transform: uppercase;
                 font-family: ClearSansBold;
                 margin-bottom: 30px;
+                color: #252525;
+                display: block;
+                transition: 0.3s;
+            }
+            .h6_link:hover {
+                color: #4eb77f;
             }
             ul{
                 margin: 0;
