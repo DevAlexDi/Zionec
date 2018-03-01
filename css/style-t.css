@@ -181,6 +181,8 @@ body {
     font: 26px ClearSansBold;
     text-transform: uppercase;
     margin-bottom: 35px; }
+  #chosen .logos_wrap {
+    position: relative; }
   #chosen .logos {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -201,10 +203,37 @@ body {
         opacity: 0.2;
         -webkit-transition: 0.3s;
         transition: 0.3s; }
-      #chosen .logos .logo_item.slick-current img {
+      #chosen .logos .logo_item.slick-current img, #chosen .logos .logo_item:hover img {
         -webkit-filter: grayscale(0%);
                 filter: grayscale(0%);
         opacity: 1; }
+  #chosen .slick-arrow {
+    position: absolute;
+    top: 50%;
+    margin-top: -70px;
+    width: 45px;
+    height: 140px;
+    border: none;
+    outline: none;
+    z-index: 10;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background: none;
+    /*background: #1b5469;
+    background: -moz-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
+    background: -webkit-linear-gradient(315deg, #21606c 0%, #50bb80 100%);
+    background: linear-gradient(-135deg, #21606c 0%, #50bb80 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21606c', endColorstr='#50bb80',GradientType=1 ); */ }
+    #chosen .slick-arrow:hover {
+      opacity: 0.8; }
+    #chosen .slick-arrow.slick-prev {
+      left: 0;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px; }
+    #chosen .slick-arrow.slick-next {
+      right: 0;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px; }
 
 #big_grey_triangle {
   position: relative;
@@ -380,7 +409,7 @@ body {
     left: 50%;
     display: block;
     content: '';
-    background: url(../img/1c_bg.png) no-repeat center;
+    background: url(../img/1c_background.jpg) no-repeat center;
     width: 1026px;
     height: 903px;
     top: 0;
